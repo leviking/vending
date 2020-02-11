@@ -17,5 +17,5 @@ CREATE TABLE `orders` (
   `payment_method` varchar(6) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `product_id` (`product_id`),
-  CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`)
+  CONSTRAINT `orders_idfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`)
 );
